@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-1.11.1.js"></script>
+    <style>
+        div.man{
+            height: 0;
+            width: 0;
+            border-radius: 50%;
+            border-left:200px solid yellow;
+            border-top:200px solid yellow;
+            border-bottom:200px solid yellow;
+            border-right:200px solid transparent;
+            display: inline-block;
+            margin-top: 250px;
+            margin-left: 100px;
+        }
+        span{
+            height: 120px;
+            width: 120px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0px 10px #ffffff;
+            display: inline-block;
+            margin: 0 8px;
+        }
+        b{
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            margin: 0 8px;
+        }
+        .badman_body{
+            width: 120px;
+            height: 90px;
+            background-color: mediumpurple;
+            float: left;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            position: relative;
+        }
+        .badman_body:before{
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 36px;
+            left: 24px;
+        }
+        .badman_body:after{
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 36px;
+            right: 24px;
+        }
+        i{
+            width: 12px;
+            height: 30px;
+            overflow: hidden;
+            display: inline-block;
+            /*background-color: pink;*/
+            float: left;
+            position: relative;
+        }
+        i:nth-child(odd) s{
+            width: 0;
+            height: 0;
+            border-top: 30px solid mediumpurple;
+            border-bottom: 30px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        i:nth-child(even) s{
+            width: 0;
+            height: 0;
+            border-top: 30px solid mediumpurple;
+            border-bottom: 30px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        circle{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: darkseagreen;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body bgcolor="#333">
+    <div class="man"></div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <b>
+        <div class="badman_body"></div>
+        <!-- 以下为小脚-->
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+        <i>
+            <s></s>
+        </i>
+    </b>
+    <span></span>
+    <circle></circle>
+</body>
+</html>
